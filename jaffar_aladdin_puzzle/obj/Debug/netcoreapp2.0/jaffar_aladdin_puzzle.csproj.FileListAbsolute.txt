@@ -1,0 +1,10 @@
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\bin\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.deps.json
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\bin\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.runtimeconfig.json
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\bin\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.runtimeconfig.dev.json
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\bin\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.dll
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\bin\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.pdb
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\obj\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.csproj.CoreCompileInputs.cache
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\obj\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.AssemblyInfoInputs.cache
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\obj\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.AssemblyInfo.cs
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\obj\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.dll
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\obj\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.pdb

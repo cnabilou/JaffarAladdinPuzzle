@@ -1,0 +1,10 @@
+D:\Projects\Jafar_Aladdin\Jafar_Aladdin\bin\Debug\netcoreapp2.0\Jafar_Aladdin.deps.json
+D:\Projects\Jafar_Aladdin\Jafar_Aladdin\bin\Debug\netcoreapp2.0\Jafar_Aladdin.runtimeconfig.json
+D:\Projects\Jafar_Aladdin\Jafar_Aladdin\bin\Debug\netcoreapp2.0\Jafar_Aladdin.runtimeconfig.dev.json
+D:\Projects\Jafar_Aladdin\Jafar_Aladdin\bin\Debug\netcoreapp2.0\Jafar_Aladdin.dll
+D:\Projects\Jafar_Aladdin\Jafar_Aladdin\bin\Debug\netcoreapp2.0\Jafar_Aladdin.pdb
+D:\Projects\Jafar_Aladdin\Jafar_Aladdin\obj\Debug\netcoreapp2.0\Jafar_Aladdin.csproj.CoreCompileInputs.cache
+D:\Projects\Jafar_Aladdin\Jafar_Aladdin\obj\Debug\netcoreapp2.0\Jafar_Aladdin.AssemblyInfoInputs.cache
+D:\Projects\Jafar_Aladdin\Jafar_Aladdin\obj\Debug\netcoreapp2.0\Jafar_Aladdin.AssemblyInfo.cs
+D:\Projects\Jafar_Aladdin\Jafar_Aladdin\obj\Debug\netcoreapp2.0\Jafar_Aladdin.dll
+D:\Projects\Jafar_Aladdin\Jafar_Aladdin\obj\Debug\netcoreapp2.0\Jafar_Aladdin.pdb
