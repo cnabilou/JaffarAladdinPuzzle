@@ -8,3 +8,4 @@ D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\obj\Debug\netcoreapp2.0\
 D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\obj\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.AssemblyInfo.cs
 D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\obj\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.dll
 D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\obj\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.pdb
+D:\Projects\jaffar_aladdin_puzzle\jaffar_aladdin_puzzle\obj\Debug\netcoreapp2.0\jaffar_aladdin_puzzle.csprojResolveAssemblyReference.cache

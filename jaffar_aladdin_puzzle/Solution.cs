@@ -30,10 +30,10 @@ namespace Jafar_Aladdin
             // Get Aladdin position
             _aladdinInitialPosition = AladdinPostion(array);
 
-            // Calculate max jumps
-            var maxJump = Jump(_aladdinInitialPosition, array);
+            LeftPathJumpCount(_aladdinInitialPosition, array);
+            RightPathJumpCount(_aladdinInitialPosition, array);
 
-            return maxJump;
+            return Math.Max(_leftMoveCount, _rightMoveCount);
         }
 
         /// <summary>
@@ -82,6 +82,7 @@ namespace Jafar_Aladdin
             if (CanMoveToPosition(aladdinPosition, array, SearchType.CanMoveRight))
             {
                 _rightMoveCount++;
+
 
                 // get new aladdin position
                 _lx = aladdinPosition[0] + 2;
@@ -147,6 +148,78 @@ namespace Jafar_Aladdin
                             && (emptyItem == Empty));
                 default:
                     return false;
+            }
+        }
+
+        public static void LeftPathJumpCount(int[] aladdinPosition, string[] array)
+        {
+            var lx = 0;
+            var ly = 0;
+
+            if (CanMoveToPosition(aladdinPosition, array, SearchType.CanMoveLeft))
+            {
+                _leftMoveCount++;
+
+                // get new aladdin position
+                lx = aladdinPosition[0] - 2;
+                ly = aladdinPosition[1] - 2;
+
+                if ((lx >= 0)
+                    || (ly >= 0))
+                {
+                    var newPosition = new int[] { lx, ly };
+                    LeftPathJumpCount(newPosition, array);
+                }
+            }
+            if (CanMoveToPosition(aladdinPosition, array, SearchType.CanMoveRight))
+            {
+                _rightMoveCount++;
+                // get new aladdin position
+                lx = aladdinPosition[0] + 2;
+                ly = aladdinPosition[1] - 2;
+
+                if ((lx >= 0 || _lx <= _arrayDimension)
+                    || (_ly >= 0))
+                {
+                    var newPosition = new int[] { lx, ly };
+                    LeftPathJumpCount(newPosition, array);
+                }
+            }
+        }
+
+        public static void RightPathJumpCount(int[] aladdinPosition, string[] array)
+        {
+            var lx = 0;
+            var ly = 0;
+
+            if (CanMoveToPosition(aladdinPosition, array, SearchType.CanMoveRight))
+            {
+                _rightMoveCount++;
+
+                // get new aladdin position
+                lx = aladdinPosition[0] - 2;
+                ly = aladdinPosition[1] - 2;
+
+                if ((lx >= 0)
+                    || (ly >= 0))
+                {
+                    var newPosition = new int[] { lx, ly };
+                    RightPathJumpCount(newPosition, array);
+                }
+            }
+            if (CanMoveToPosition(aladdinPosition, array, SearchType.CanMoveLeft))
+            {
+                _leftMoveCount++;
+                // get new aladdin position
+                lx = aladdinPosition[0] + 2;
+                ly = aladdinPosition[1] - 2;
+
+                if ((lx >= 0 || _lx <= _arrayDimension)
+                    || (_ly >= 0))
+                {
+                    var newPosition = new int[] { lx, ly };
+                    RightPathJumpCount(newPosition, array);
+                }
             }
         }
     }

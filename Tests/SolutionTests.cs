@@ -1,18 +1,82 @@
 
+using Jafar_Aladdin;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Jafar_Aladdin;
 
 namespace Tests
 {
     [TestClass]
     public class SolutionTests
     {
-        [TestInitialize]
-        public void InitializeMethods()
+        [TestMethod]
+        public void Should_Return_Five_As_MaxJump()
         {
-
+            var actual = new[]
+            {
+                ".....X......",
+                "............",
+                ".....X......",
+                "............",
+                ".....X......",
+                "............",
+                ".....X......",
+                "............",
+                ".....X......",
+                "............",
+                ".....X.X....",
+                "......O....."
+            };
+            var expected = Solution.GetMaxJump(actual);
+            Assert.AreEqual(expected, 5, "The max jump should be 5");
         }
+
+        [TestMethod]
+        public void Should_Return_Six_As_MaxJump()
+        {
+            var actual = new[]
+            {
+                ".............",
+                ".....X.......",
+                ".............",
+                ".....X.......",
+                ".............",
+                ".....X.......",
+                ".............",
+                ".....X.......",
+                ".............",
+                ".....X.......",
+                ".............",
+                ".....X.X.....",
+                "......O......"
+            };
+            var expected = Solution.GetMaxJump(actual);
+            Assert.AreEqual(expected, 6, "The max jump should be 6");
+        }
+
+        [TestMethod]
+        public void Should_Return_Five_Jump_As_MaxJump()
+        {
+            var actual = new[]
+            {
+                ".............",
+                ".............",
+                ".............",
+                ".....X.......",
+                ".............",
+                ".....X.......",
+                ".............",
+                ".....X.X.....",
+                ".............",
+                "...X.X.......",
+                ".............",
+                ".....X.X.....",
+                "......O......"
+            };
+            var expected = Solution.GetMaxJump(actual);
+            Assert.AreEqual(expected, 5, "The max jump should be 6");
+        }
+
+        #region Should be private Methods
 
         [TestMethod]
         public void Aladdin_Position()
@@ -121,26 +185,6 @@ namespace Tests
             Assert.IsFalse(expected, "The Jaffar should on the right diagonal square of Aladdin");
         }
 
-        [TestMethod]
-        public void Should_Return_Three_As_MaxJump()
-        {
-            var actual = new[]
-            {
-                "............",
-                "............",
-                "........X...",
-                "............",
-                "........X.X.",
-                "............",
-                ".....X.X....",
-                "............",
-                ".....X......",
-                "............",
-                ".....X.X....",
-                "......O....."
-            };
-            var expected = Solution.GetMaxJump(actual);
-            Assert.AreEqual(expected, 3, "The max jump should be 3");
-        }
+        #endregion Should be private Methods
     }
 }
